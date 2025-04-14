@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appColorBranco"
+    tools:context=".FormularioPedidoActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayoutFormulario"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/appColorVerde"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtTituloPedido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/appTituloPedido"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/appColorBranco"
+            android:fontFamily="monospace" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/txtSaborPizza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appSaborPizza"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/frameLayoutFormulario"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkCalabresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkCalabresa"
+        android:buttonTint="@color/appColorVerde"
+        app:layout_constraintTop_toBottomOf="@id/txtSaborPizza"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkMarguerita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkMarguerita"
+        android:buttonTint="@color/appColorVerde"
+        app:layout_constraintTop_toBottomOf="@id/checkCalabresa"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <CheckBox
+        android:id="@+id/checkPortuguesa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkPortuguesa"
+        android:buttonTint="@color/appColorVerde"
+        app:layout_constraintTop_toBottomOf="@id/checkMarguerita"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp" />
+
+    <TextView
+        android:id="@+id/txtTamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appTamanhoPizza"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/checkPortuguesa"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupTamanho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txtTamanho"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp">
+
+        <RadioButton
+            android:id="@+id/radioPequena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioPequena"
+            android:buttonTint="@color/appColorVermelho" />
+
+        <RadioButton
+            android:id="@+id/radioMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/appColorVerde"
+            android:text="@string/radioMedia" />
+
+        <RadioButton
+            android:id="@+id/radioGrande"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/appColorVerde"
+            android:text="@string/radioGrande" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appPagamento"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnPedido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroupTamanho"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txtPagamento"
+        app:layout_constraintStart_toStartOf="@id/txtPagamento">
+
+        <RadioButton
+            android:id="@+id/radioPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioPix" />
+
+        <RadioButton
+            android:id="@+id/radioCredito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioCredito" />
+
+        <RadioButton
+            android:id="@+id/radioDebito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioDebito" />
+
+        <RadioButton
+            android:id="@+id/radioDinheiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radioDinheiro" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnPedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/appColorVermelho"
+        android:fontFamily="monospace"
+        android:onClick="fazerPedido"
+        android:text="@string/btnFazerPedido"
+        android:textAlignment="center"
+        android:textColor="@color/appColorBranco"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.866" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Strings do Projeto -->
+    <string name="btnTelaPedido">Quero pedir uma pizza</string>
+    <string name="appTituloPedido">Pedido de Pizza</string>
+    <string name="btnFazerPedido">Finalizar Pedido</string>
+    <string name="appSaborPizza">Escolha o sabor(es):</string>
+    <string name="checkCalabresa">Calabresa</string>
+    <string name="checkMarguerita">Marguerita</string>
+    <string name="checkPortuguesa">Portuguesa</string>
+    <string name="appTamanhoPizza">Escolha o tamanho:</string>
+    <string name="radioPequena">Pequena</string>
+    <string name="radioMedia">Média</string>
+    <string name="radioGrande">Grande</string>
+    <string name="appPagamento">Forma de Pagamento:</string>
+    <string name="radioPix">Pix</string>
+    <string name="radioCredito">Cartão de Crédito</string>
+    <string name="radioDebito">Cartão de Débito</string>
+    <string name="radioDinheiro">Dinheiro</string>
+    <string name="appTituloResumo">Resumo do Pedido</string>
+    <string name="textResultado">-------</string>
+    <string name="btnVoltar">Voltar</string>
+
+    <!-- Cores do Projeto -->
+    <color name="appColorVermelho">#A51A1F</color>>
+    <color name="appColorVerde">#055530</color>
+    <color name="appColorPreto">#000000</color>
+    <color name="appColorBranco">#FFFFFF</color>
+
+</resources>
